@@ -8,19 +8,40 @@ body {
 }
 
 header {
-    background: #333;
+    background: #0d6a08;
     color: #fff;
     padding: 1rem 0;
     text-align: center;
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-header h1 {
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.name-title {
+    text-align: left;
+}
+
+.name-title h1 {
     margin: 0;
     font-size: 2.5rem;
 }
 
-header p {
+.name-title p {
     margin: 0.5rem 0;
+}
+
+.contact-info {
+    text-align: right;
 }
 
 .contact-info p {
@@ -29,6 +50,8 @@ header p {
 
 main {
     padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 section {
@@ -55,10 +78,11 @@ ul li {
 }
 
 footer {
-    background: #333;
+    background: #0d6a08;
     color: #fff;
     text-align: center;
     padding: 1rem 0;
     width: 100%;
     bottom: 0;
 }
+
