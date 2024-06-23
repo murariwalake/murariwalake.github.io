@@ -86,3 +86,13 @@ footer {
     bottom: 0;
 }
 
+.vertical-line {
+    display: inline-block;
+    width: 1px;
+    height: 0.8em; /* Adjust height as needed */
+    background-color: #fff; /* Color of the vertical line */
+    margin: 0 0.5em; /* Adjust margin as needed */
+    vertical-align: middle;
+}
+
+
